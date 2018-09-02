@@ -37,9 +37,16 @@ export default appCtrl = function ($scope, $mdDialog) {
         console.log("openMenu called");
         $mdMenu.open(ev);
     };
+/*
     $scope.addCheckBox = function(card) {
         console.log(card);
         card.checked = false;
         console.log(card);
     };
+*/
+    $scope.addCheckBox = function(card) {
+        if(card.checked = undefined || true){card.checked = false;}
+        else if(card.checked = false){card.checked = true;}
+    };
+
 };

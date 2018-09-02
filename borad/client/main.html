@@ -21,7 +21,7 @@
     <div flex-xs flex-gt-xs="50" layout="column">
       <md-card ng-repeat="card in cards" ng-click="showDialog($event, card)">
         <div>
-          <input type="checkbox" ng-show="card.checked !== undefined">
+          <input type="checkbox" ng-show="card.checked === false"> 
           <label ng-bind="card.title">
           </label>
           <md-menu>
